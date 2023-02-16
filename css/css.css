@@ -22,7 +22,7 @@
 }
 
 .sticky{
-  background-color: #520044;
+  background-color: #C71585;
   width: 100%; 
   padding: 30px 0;
   font-family: 'Ubunto', sans-serif;
@@ -70,6 +70,7 @@ font-family: "Rajdhani" sans-serif;
     font-weight: 500;
     margin-left: -3px;
 }
+
 .home .home-content .text3{
     font-size: 40px;
     margin: 5px 0;
@@ -78,6 +79,22 @@ font-family: "Rajdhani" sans-serif;
   color:#C71585;
   font-weight: 500;
 
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: #EE82EE;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #EE82EE;
+}
+
+.home .home-content a:hover{
+    color: #EE82EE;
+    background: none;
 }
 
 .imgRodapeHome{
@@ -89,26 +106,197 @@ font-family: "Rajdhani" sans-serif;
 
 .menuBtn{
     color: #fff;
-    margin-right: 450px;
-    margin-top: -62px;
-    font-weight: 500;
-    margin-left: 25px;
-   cursor: pointer;
-   display: none;
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
    
 
 }
 
 
+#aboutMe{
+background: linear-gradient( #C71585, #ebf8e1, #EE82EE);
+height: 100vh;
+   
+}
+
+.columnLeft{
+    background-image: url('../img/aboutMe.png');
+    height: 100VH;
+    background-repeat: no-repeat;
+    margin: 0 0 5px 870px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsividade */
+
+@media(max-width:1162px){
+    .home .home-content .text2{
+        font-size: 55px;
+    }
+    .home .home-content .text2 span{
+        font-size: 55px;
+       
+    }
+    .home .home-content .text3{
+        font-size: 50px;
+      
+    }
+
+}
+@media(max-width:1119px){
+    .home .home-content .text2{
+        font-size: 50px;
+    }
+    .home .home-content .text2 span{
+        font-size: 50px;
+       
+    }
+    .home .home-content .text3{
+        font-size: 45px;
+      
+    }
+
+}
+@media(max-width:1035px){
+    .home .home-content .text2{
+        font-size: 45px;
+    }
+    .home .home-content .text2 span{
+        font-size: 45px;
+       
+    }
+    .home .home-content .text3{
+        font-size: 40px;
+      
+    }
+
+}
+@media(max-width:954px){
+    .home .home-content .text2{
+        font-size: 40px;
+    }
+    .home .home-content .text2 span{
+        font-size: 40px;
+       
+    }
+    .home .home-content .text3{
+        font-size: 35px;
+      
+    }
+
+}
+@media(max-width:871px){
+    .home .home-content .text2{
+        font-size: 35px;
+    }
+    .home .home-content .text2 span{
+        font-size: 35px;
+       
+    }
+    .home .home-content .text3{
+        font-size: 30px;
+      
+    }
+
+}
+@media(max-width:789px){
+    .home .home-content .text2{
+        font-size: 30px;
+    }
+    .home .home-content .text2 span{
+        font-size: 30px;
+       
+    }
+    .home .home-content .text3{
+        font-size: 25px;
+      
+    }
+
+}
+@media(max-width:707px){
+    .home .home-content .text2{
+        font-size: 25px;
+    }
+    .home .home-content .text2 span{
+        font-size: 25px;
+       
+    }
+    .home .home-content .text3{
+        font-size: 20px;
+      
+    }
+
+}
+@media(max-width:624px){
+    .home .home-content .text2{
+        font-size: 20px;
+    }
+    .home .home-content .text2 span{
+        font-size: 20px;
+       
+    }
+    .home .home-content .text3{
+        font-size: 15px;
+      
+    }
+
+}
+@media(max-width:624px){
+    .home .home-content .text2{
+        font-size: 19px;
+    }
+    .home .home-content .text2 span{
+        font-size: 19px;
+       
+    }
+    .home .home-content .text3{
+        font-size: 17px;
+      
+    }
+
+}
+
  @media(max-width:500px){
     .max-width{ 
+        max-width: 800px;
         padding: 0 50px;
     }.menuBtn{
-        margin-left: 110px;
-        text-align: center;
-        color: #fff;
-        font-weight: 500;
-       cursor: pointer;
+        display: block;
+        z-index: 999;
        
     
     }
@@ -116,11 +304,12 @@ font-family: "Rajdhani" sans-serif;
         position: fixed;
         width: 100%;
         height: 100vh;
-        left: 0;
+        left: -100%;
         top: 0;
-        background:#C71585 ;
+        background: #C71585;
         padding-top: 80px;
         text-align: center;
+        transition: all 0.3s ease;
 
     }.navbarmenu .menu li{
         display: block;
@@ -140,39 +329,15 @@ font-family: "Rajdhani" sans-serif;
         font-size: 24px;
       
     }
+    .home .home-content a{
+        font-size: 23;
+        padding: 10px 30px;
+    }
     
 }
-@media(max-width:510px){
-    .home .home-content .text2{
-        font-size: 25px;
-    }
-    .home .home-content .text2 span{
-        font-size: 32px;
-       
-    }
-    .home .home-content .text3{
-        font-size: 32px;
-      
-    }
 
-}
 
-@media(max-width: 1139px){
-    .navbarmenu .max-width{
-     margin-left: 0;
-    }
-   
-}
-@media(max-width: 1126px){
-    .navbarmenu .max-width{
-     margin-left: 0;
-    }
-   
-}
 
-@media(max-width: 1174px){
-    .navbarmenu .max-width{
-    padding: 0 50px;
-    }
-}
+
+
 
