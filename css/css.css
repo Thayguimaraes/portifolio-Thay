@@ -114,18 +114,84 @@ font-family: "Rajdhani" sans-serif;
 }
 
 
-#aboutMe{
-background: linear-gradient( #C71585, #ebf8e1, #EE82EE);
+
+
+ #aboutMe{
+background-image:linear-gradient(#C71585, #fff);
 height: 100vh;
+width: 100%;
+padding: 100px 0;
+font-family: 'Ubuntu' sans-serif;
+}
+
+.aboutMe .aboutContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutMe .title{
+    font-family: 'Raleway' sans-serif; 
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #ebf8e1;
+}
+ 
+.aboutMe .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:#DA70D6 ;
+    transform: translateX(-50%);
+}
+
+.aboutMe .aboutContent .columnLeft{
+    width: 45%;
+    
+}
+.aboutMe .aboutContent .columnRigth{
+    width: 55%; 
+    border-radius: 5px;
+
+
+}
+
+
+.aboutMe .aboutContent .columnRigth .textAboutMe{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+    
    
 }
 
-.columnLeft{
-    background-image: url('../img/aboutMe.png');
-    height: 100VH;
-    background-repeat: no-repeat;
-    margin: 0 0 5px 870px;
+.aboutMe .aboutContent .columnRigth .textAboutMe span{
+    color:#EE82EE ;
 }
+.aboutMe .aboutContent p{
+    color:#8B008B ;
+    font-size: 25px;
+}
+
+
+.aboutMe .aboutContent .columnLeft img{
+width: 400px;
+height: 400px;
+object-fit: cover;
+}
+
+
+
+
 
 
 
